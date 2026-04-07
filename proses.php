@@ -1,16 +1,22 @@
 <?php
-include "config.php";
+include 'config.php';
 
-$nomor = $_POST['nomor'];
+$nomor   = $_POST['nomor'];
 $provider = $_POST['provider'];
-$nominal = $_POST['nominal'];
-$tujuan = $_POST['tujuan'];
+$nominal  = $_POST['nominal'];
+$tujuan   = $_POST['tujuan'];
 
-$query = mysqli_query($conn, "INSERT INTO transaksi (nomor, provider, nominal, tujuan) VALUES ('$nomor','$provider','$nominal','$tujuan')");
+$rate = 0.8;
+$hasil = $nominal * $rate;
 
-if($query){
-    echo "Berhasil dikirim!";
+$query = "INSERT INTO transaksi 
+(nomor_hp, provider, nominal, tujuan, rate, hasil, status) 
+VALUES 
+('$nomor','$provider','$nominal','$tujuan','$rate','$hasil','pending')";
+
+if(mysqli_query($conn, $query)){
+    echo "Berhasil kirim!";
 } else {
-    echo "Gagal: " . mysqli_error($conn);
+    echo "Error: " . mysqli_error($conn);
 }
 ?>
