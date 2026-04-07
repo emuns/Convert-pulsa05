@@ -1,26 +1,26 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Form Convert Pulsa</title>
+  <title>Form Convert</title>
 </head>
 <body>
 
 <h2>Form Convert Pulsa</h2>
 
 <form action="proses.php" method="POST">
-    <label>Nomor HP:</label><br>
-    <input type="text" name="nomor" required><br><br>
+  Nomor HP:<br>
+  <input type="text" name="nomor"><br><br>
 
-    <label>Provider:</label><br>
-    <input type="text" name="provider" required><br><br>
+  Provider:<br>
+  <input type="text" name="provider"><br><br>
 
-    <label>Nominal:</label><br>
-    <input type="number" name="nominal" required><br><br>
+  Nominal:<br>
+  <input type="number" name="nominal"><br><br>
 
-    <label>Tujuan (DANA/OVO/Bank):</label><br>
-    <input type="text" name="tujuan" required><br><br>
+  Tujuan (Dana/OVO):<br>
+  <input type="text" name="tujuan"><br><br>
 
-    <button type="submit">Kirim</button>
+  <button type="submit">Kirim</button>
 </form>
 
 </body>
