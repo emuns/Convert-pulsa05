@@ -1,53 +1,27 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html>
 <head>
-<title>Convert</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{font-family:Poppins;background:#6366f1;color:#fff;text-align:center}
-.box{background:#fff;color:#000;padding:20px;border-radius:10px;margin:40px auto;width:300px}
-input,select{width:100%;padding:10px;margin:5px}
-button{width:100%;padding:10px;background:#6366f1;color:#fff;border:none}
-</style>
+    <title>Form Convert Pulsa</title>
 </head>
 <body>
 
-<div class="box">
-<h2>Convert Pulsa</h2>
+<h2>Form Convert Pulsa</h2>
 
-<form action="proses.php" method="POST" enctype="multipart/form-data">
+<form action="proses.php" method="POST">
+    <label>Nomor HP:</label><br>
+    <input type="text" name="nomor" required><br><br>
 
-<input name="nomor" placeholder="Nomor HP" required>
+    <label>Provider:</label><br>
+    <input type="text" name="provider" required><br><br>
 
-<select name="provider" id="provider">
-<option>Telkomsel</option>
-<option>XL</option>
-<option>Indosat</option>
-</select>
+    <label>Nominal:</label><br>
+    <input type="number" name="nominal" required><br><br>
 
-<input name="nominal" id="nominal" placeholder="Nominal" required>
+    <label>Tujuan (DANA/OVO/Bank):</label><br>
+    <input type="text" name="tujuan" required><br><br>
 
-<input name="tujuan" placeholder="DANA/OVO" required>
-
-<input type="file" name="bukti" required>
-
-<p>Estimasi: <b id="hasil">0</b></p>
-
-<button>Convert</button>
+    <button type="submit">Kirim</button>
 </form>
-
-</div>
-
-<script>
-let r={Telkomsel:0.85,XL:0.8,Indosat:0.75};
-function hitung(){
- let p=document.getElementById('provider').value;
- let n=document.getElementById('nominal').value;
- document.getElementById('hasil').innerText=n*r[p]||0;
-}
-document.getElementById('nominal').oninput=hitung;
-document.getElementById('provider').onchange=hitung;
-</script>
 
 </body>
 </html>
