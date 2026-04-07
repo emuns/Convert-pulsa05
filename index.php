@@ -56,15 +56,15 @@ body{
 </head>
 <body>
 
-<div class="nav">
-  <div>💸 ConvertPro</div>
-  <div><a href="index_form.php" style="color:#fff">Convert</a></div>
+<<div class="nav">
+<div>💸 ConvertPro</div>
+<div><a href="index_form.php" style="color:#fff">Convert</a></div>
 </div>
 
 <div class="hero">
-  <h1>Convert Pulsa Jadi Uang</h1>
-  <p>Cepat & terpercaya</p>
-  <a href="index_form.php" class="btn">Mulai Sekarang</a>
+<h1>Convert Pulsa Jadi Uang</h1>
+<p>Cepat & terpercaya</p>
+<a href="index_form.php" class="btn">Mulai Sekarang</a>
 </div>
 
 <div class="section">
