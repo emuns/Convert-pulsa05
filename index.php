@@ -23,7 +23,7 @@ body{margin:0;font-family:Poppins;background:#0f172a;color:#fff}
 <div class="hero">
 <h1>Convert Pulsa Jadi Uang</h1>
 <p>Cepat & terpercaya</p>
-<a href="index_form.php" class="btn">Mulai Sekarang</a>
+<a <a href="index_form.php" class="btn">Mulai Sekarang</a>
 </div>
 
 <div class="section">
